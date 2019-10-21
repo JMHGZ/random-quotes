@@ -5,12 +5,34 @@ project 1 - A Random Quote Generator
 
 // Study guide for this project - https://drive.google.com/file/d/1s5grutGuQFwJcQP8bFwEI69Q8FCkGdDk/view?usp=sharing
 
+//arrow functions used throughout for extra reps
+
 const quotes = [
-  { quote: "abc", source: "", citation: "", year: "" },
-  { quote: "123", source: "" },
-  { quote: "asd", source: "" },
-  { quote: "zxc", source: "" },
-  { quote: "311", source: "" }
+  {
+    quote:
+      "If we are open only to discoveries which will accord with what we know already, we may as well stay shut.",
+    source: "Alan Watts",
+    citation: "The Wisdom of Insecurity",
+    year: "1951"
+  },
+
+  {
+    quote:
+      "Knowing Is Not Enough; We Must Apply. Wishing Is Not Enough; We Must Do.",
+    source: "Johann Wolfgang Von Goethe"
+  },
+
+  {
+    quote: "Whether You Think You Can Or Think You Can’t, You’re Right.",
+    source: "Henry Ford"
+  },
+
+  { quote: "Creativity Is Intelligence Having Fun", source: "Albert Einstein" },
+
+  {
+    quote: "Life is 10% what happens to you and 90% how you react to it.",
+    source: "Charles R. Swindoll"
+  }
 ];
 
 console.log(quotes);
@@ -20,17 +42,16 @@ let getRandomQuote = () => {
   return [ranQ];
 };
 
+console.log(getRandomQuote());
+
 // function getRandomQuote() {
 //   let ranQ = quotes[Math.floor(Math.random() * quotes.length)];
 //   return [ranQ];
 // }
-console.log(getRandomQuote());
 
-/***
-  Create the `getRandomQuote` function to:
-   - Create a variable to store a random number 
-   - Cse the random number to `return` a random quote object from the `quotes` array.
-***/
+function printQuote() {
+  let pickedQ = getRandomQuote();
+}
 
 /***
   Create the `printQuote` function to: 
